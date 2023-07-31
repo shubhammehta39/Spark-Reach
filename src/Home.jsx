@@ -1,12 +1,55 @@
-import React from 'react';
+// import React from 'react';
+// import { IonIcon } from '@ionic/react';
+// import '@ionic/react/css/core.css';
+// import '@ionic/react/css/normalize.css';
+// import '@ionic/react/css/structure.css';
+// import '@ionic/react/css/typography.css';
+// import '@ionic/react/css/padding.css';
+// import '@ionic/react/css/float-elements.css';
+// import '@ionic/react/css/text-alignment.css';
+// import '@ionic/react/css/text-transformation.css';
+// import '@ionic/react/css/flex-utils.css';
+// import '@ionic/react/css/display.css';
+import React, { useState, useEffect } from 'react';
+
+
+
+
+
 
 const Funel = () => {
+  // const [isNavbarActive, setNavbarActive] = useState(false);
+  // const [isGoTopActive, setGoTopActive] = useState(false);
+
+  // const elemToggleFunc = (elem) => {
+  //   elem.classList.toggle("active");
+  // };
+
+  // const handleMenuToggle = () => {
+  //   setNavbarActive(!isNavbarActive);
+  // };
+
+  // const handleScroll = () => {
+  //   if (window.scrollY >= 800) {
+  //     setGoTopActive(true);
+  //   } else {
+  //     setGoTopActive(false);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
   return (
     <>
       <header>
         <div className="container">
           <a href="#" className="logo">
-            <img src="./assets/images/logo.png" alt="Funel logo" />
+            {/* <img src="./src/assets/images/logo.png" alt="Funel logo" /> */}
+            <h3>Spark Reach</h3>
           </a>
 
           <div className="navbar-wrapper">
@@ -29,7 +72,7 @@ const Funel = () => {
                   <a href="#contact" className="nav-link">Contact</a>
                 </li>
               </ul>
-              <button className="btn btn-primary">Sign Up</button>
+              {/* <button className="btn btn-primary">Sign Up</button> */}
             </nav>
           </div>
         </div>
@@ -46,9 +89,11 @@ const Funel = () => {
                 </p>
                 <button className="btn btn-primary">Get started</button>
               </div>
-              <div className="hero-banner"></div>
+              <div className="hero-banner ">
+                {/* <img src="./src/assets/images/hero-banner.png" alt=""  style={{width:'100%'}}/> */}
+              </div>
             </div>
-            <img src="./assets/images/bg.png" alt="shape" className="shape-content" />
+            <img src="./src/assets/images/bg.png" alt="shape" className="shape-content" />
           </section>
 
           <section className="about" id="about">
@@ -62,7 +107,7 @@ const Funel = () => {
                   <li>
                     <div className="about-card">
                       <div className="card-icon">
-                        <ion-icon name="briefcase-outline"></ion-icon>
+                        <ion-icon name="briefcase-outline">#1 logo</ion-icon>
                       </div>
                       <h3 className="h3 card-title">Paid Search and Social Management</h3>
                       <p className="card-text">
@@ -70,7 +115,7 @@ const Funel = () => {
                       </p>
                     </div>
                   </li>
-                  <li>
+                  {/* <li>
                     <div className="about-card">
                       <div className="card-icon">
                         <ion-icon name="chatbubbles-outline"></ion-icon>
@@ -91,12 +136,12 @@ const Funel = () => {
                         Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back.
                       </p>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
-              <div className="about-bottom">
+              {/* <div className="about-bottom">
                 <figure className="about-bottom-banner">
-                  <img src="./assets/images/about-banner.png" alt="about banner" className="about-banner" />
+                  <img src="./src/assets/images/about-banner.png" alt="about banner" className="about-banner" />
                 </figure>
                 <div className="about-bottom-content">
                   <h2 className="h2 section-title">We’re obsessed with growth</h2>
@@ -105,7 +150,7 @@ const Funel = () => {
                   </p>
                   <button className="btn btn-secondary">Sign Up For Free</button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
 
@@ -120,7 +165,7 @@ const Funel = () => {
               <ul className="features-list">
                 <li className="features-item">
                   <figure className="features-item-banner">
-                    <img src="./assets/images/feature-1.png" alt="feature banner" />
+                    <img src="./src/assets/images/feature-1.png" alt="feature banner" />
                   </figure>
                   <div className="feature-item-content">
                     <h3 className="h2 item-title">Cover your everyday expenses</h3>
@@ -131,7 +176,7 @@ const Funel = () => {
                 </li>
                 <li className="features-item">
                   <figure className="features-item-banner">
-                    <img src="./assets/images/feature-2.png" alt="feature banner" />
+                    <img src="./src/assets/images/feature-2.png" alt="feature banner" />
                   </figure>
                   <div className="feature-item-content">
                     <h3 className="h2 item-title">We offer low fees that are transparent</h3>
@@ -144,7 +189,7 @@ const Funel = () => {
             </div>
           </section>
 
-          <section className="cta">
+          {/* <section className="cta">
             <div className="container">
               <div className="cta-card">
                 <h3 className="cta-title">Try for 7 days free</h3>
@@ -157,14 +202,14 @@ const Funel = () => {
                 </form>
               </div>
             </div>
-          </section>
+          </section> */}
 
-          <section className="contact" id="contact">
+          <section className="contact" id="contact" style={{color:'white'}}>
             <div className="container">
               <div className="contact-content">
                 <h2 className="h2 contact-title">Let’s scale your brand, together</h2>
                 <figure className="contact-banner" />
-                  <img src="./assets/images/contact.png" alt="contact banner" />
+                  <img src="./src/assets/images/contact.png" alt="contact banner" />
 </div>
           <form action="" className="contact-form">
             <div className="input-wrapper">
@@ -220,12 +265,12 @@ const Funel = () => {
     </article>
   </main>
 
-  <footer>
+  {/* <footer>
     <div className="footer-top">
       <div className="container">
         <div className="footer-brand">
           <a href="#" className="logo">
-            <img src="./assets/images/logo.png" alt="Funel logo" />
+            <img src="./src/assets/images/logo.png" alt="Funel logo" />
           </a>
           <p className="footer-text">Follow us on</p>
           <ul className="social-list">
@@ -312,12 +357,12 @@ const Funel = () => {
         </div>
       </div>
     </div>
-  </footer>
+  </footer> */}
 
-  <a href="#top" className="go-top active" data-go-top>
-    <ion-icon name="chevron-up-outline"></ion-icon>
-  </a>
-  <script src="./assets/js/script.js"></script>
+    {/* <a href="#top" className="go-top active" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a> */}
+  <script src="./src/assets/js/script.js"></script>
   <script
     type="module"
     src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

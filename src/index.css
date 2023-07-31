@@ -269,7 +269,7 @@ header .container {
 .about {
   position: relative;
   z-index: 1;
-  background: url("../images/about-bg.png") no-repeat;
+  background: url("./src/assets/images/about-bg.png") no-repeat;
   background-position: center;
   background-size: cover;
   padding: 120px 0;
@@ -433,6 +433,11 @@ header .container {
 
 .contact {
   margin-bottom: 120px;
+  z-index: 1;
+  background: url("./src/assets/images/about-bg.png") no-repeat;
+  background-position: center;
+  padding: 120px 0;
+  color: white;
 }
 
 .contact-content {
@@ -883,7 +888,7 @@ footer .logo {
     transform: translateY(-50%);
     width: 500px;
     padding-top: 500px;
-    background: url("../images/hero-banner.png") no-repeat;
+    background: url("./src/assets/images/hero-banner.png") no-repeat;
     background-size: contain;
   }
 
