@@ -212,8 +212,8 @@ const Funel = () => {
                   <img src="./src/assets/images/contact.png" alt="contact banner" />
 </div>
           <form action="" className="contact-form">
-            <div className="input-wrapper">
-              <label htmlFor="name" className="input-label">Name *</label>
+            <div className="input-wrapper" >
+              <label htmlFor="name" className="input-label" style={{color:'white', fontSize:'20px'}}>Name *</label>
               <input
                 type="text"
                 name="name"
@@ -225,7 +225,7 @@ const Funel = () => {
             </div>
 
             <div className="input-wrapper">
-              <label htmlFor="phone" className="input-label">Phone</label>
+              <label htmlFor="phone" className="input-label"  style={{color:'white', fontSize:'20px'}}>Phone</label>
               <input
                 type="tel"
                 name="phone"
@@ -236,7 +236,7 @@ const Funel = () => {
             </div>
 
             <div className="input-wrapper">
-              <label htmlFor="email" className="input-label">Email Address *</label>
+              <label htmlFor="email" className="input-label"  style={{color:'white', fontSize:'20px'}}>Email Address *</label>
               <input
                 type="email"
                 name="email"
@@ -248,7 +248,7 @@ const Funel = () => {
             </div>
 
             <div className="input-wrapper">
-              <label htmlFor="message" className="input-label">How can we help? *</label>
+              <label htmlFor="message" className="input-label" style={{color:'white', fontSize:'20px'}}>How can we help? *</label>
               <textarea
                 name="message"
                 id="message"
@@ -258,7 +258,7 @@ const Funel = () => {
               ></textarea>
             </div>
 
-            <button type="submit" className="btn btn-primary">Send Message</button>
+            <button type="submit" className="btn btn-primary" >Send Message</button>
           </form>
         </div>
       </section>
